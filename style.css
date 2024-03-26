@@ -1,0 +1,14 @@
+*{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.bat ,.ball,  .stump{
+  padding: 0.5rem;
+  width:7rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  margin: 1rem;
+  font-size: 1rem;
+  font-weight: bolder;
+}
