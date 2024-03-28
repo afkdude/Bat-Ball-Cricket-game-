@@ -13,21 +13,7 @@
       <button
         class="bat"
         onclick="
-    const userChoice = 'You have choosen bat';
-    
-     let randomNumber = Math.random() * 3;
-    //console.log(randomNumber);
-
-    let computerChoice;
-    if(randomNumber >0 && randomNumber <=1){
-       computerChoice = 'Bat';
-    }else if(randomNumber >1 && randomNumber <=2){
-       computerChoice ='Ball'
-    }else{
-       computerChoice ='Stump'
-    } 
-
-    //console.log(`Computer choice is ${computerChoice}`);
+        generateComputerChoice();
 
     let resultMsg;
     if(computerChoice === 'Ball'){
@@ -38,74 +24,46 @@
       resultMsg=`It's a Draw`;
     }
 
-    alert(`${userChoice} . computer choice is ${computerChoice } and  ${resultMsg}`);
+    alert(`your choice is bat  and  computer choice is ${computerChoice } and  ${resultMsg}`);
     "
       >
         Bat
       </button>
 
+      <button
+        class="ball"
+        onclick="    
+     generateComputerChoice();
 
-      <button class="ball"     
-      onclick="
-    const userChoice2 = 'You have choosen Ball';
-    
-     let randomNumber2 = Math.random() * 3;
-    //console.log(randomNumber);
-
-    let computerChoice2;
-    if(randomNumber2 >0 && randomNumber2 <=1){
-       computerChoice2 = 'Bat';
-    }else if(randomNumber2 >1 && randomNumber2 <=2){
-       computerChoice2 ='Ball'
+    if(computerChoice === 'Ball'){
+      resultMsg=`It's a Draw`;
+    }else if(computerChoice === 'Stump'){
+      resultMsg='You are the winner';
     }else{
-       computerChoice2 ='Stump'
-    } 
-
-    //console.log(`Computer choice is ${computerChoice}`);
-
-    let resultMsg2;
-    if(computerChoice2 === 'Ball'){
-      resultMsg2=`It's a Draw`;
-    }else if(computerChoice2 === 'Stump'){
-      resultMsg2='You are the winner';
-    }else{
-      resultMsg2=`Computer is the winner`;
+      resultMsg=`Computer is the winner`;
     }
 
-    alert(`${userChoice2} . computer choice is ${computerChoice2 } and  ${resultMsg2}`);
-    ">Ball</button>
+    alert(`You have choosen Ball  and  computer choice is ${computerChoice } and  ${resultMsg}`);
+    "
+      >
+        Ball
+      </button>
 
-
-
-
-      <button class="stump" 
+      <button
+        class="stump"
         onclick="
-    const userChoice3 = 'You have choosen Stump';
     
-     let randomNumber3 = Math.random() * 3;
-    //console.log(randomNumber);
+     generateComputerChoice();
 
-    let computerChoice3;
-    if(randomNumber3 >0 && randomNumber3 <=1){
-       computerChoice3 = 'Bat';
-    }else if(randomNumber3 >1 && randomNumber3 <=2){
-       computerChoice3 ='Ball'
+    if(computerChoice === 'Ball'){
+      resultMsg=`Computer is the winner`;
+    }else if(computerChoice === 'Stump'){
+      resultMsg=`It's a Draw`;
     }else{
-       computerChoice3 ='Stump'
-    } 
-
-    //console.log(`Computer choice is ${computerChoice}`);
-
-    let resultMsg3;
-    if(computerChoice3 === 'Ball'){
-      resultMsg3=`Computer is the winner`;
-    }else if(computerChoice3 === 'Stump'){
-      resultMsg3=`It's a Draw`;
-    }else{
-      resultMsg3=`You are the winner `;
+      resultMsg=`You are the winner `;
     }
 
-    alert(`${userChoice3} . computer choice is ${computerChoice3 } and  ${resultMsg3}`);
+    alert(`You have choosen Stump and computer choice is ${computerChoice } and  ${resultMsg}`);
     "
       >
         Stump
