@@ -23,17 +23,37 @@
 
 //  topic - Functions
 
-function greet(name) {
-  console.log(`Hello  Mr ${name}`);
+// function greet(name) {
+//   console.log(`Hello  Mr ${name}`);
+// }
+
+// greet("Shubham Amrawat ");
+
+
+// function age(old) {
+
+//   console.log(`You are ${old} years old`);
+
+// }
+
+// age(21)
+
+function sum(a, b) {
+  return a + b;
 }
 
-greet("Shubham Amrawat ");
+let add = sum(2, 4);
+console.log(add);
 
 
-function age(old) {
 
-  console.log(`You are ${old} years old`);
-  
+function generateRandomMove() {
+  let random = Math.random();
+  let randomMove = random * 3;
+  return randomMove;
 }
 
-age(21)
+console.log(generateRandomMove());
+console.log(generateRandomMove());
+console.log(generateRandomMove());
+console.log(generateRandomMove());
