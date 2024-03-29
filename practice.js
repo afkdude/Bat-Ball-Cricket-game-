@@ -1,5 +1,7 @@
 // practice
 
+console.log("This is my personnel practice Space");
+
 
 // let age = Math.random()
 // let gender = Math.random('Male', 'Female');
@@ -38,22 +40,31 @@
 
 // age(21)
 
-function sum(a, b) {
-  return a + b;
+// function sum(a, b) {
+//   return a + b;
+// }
+
+// let add = sum(2, 4);
+// console.log(add);
+
+
+
+// function generateRandomMove() {
+//   let random = Math.random();
+//   let randomMove = random * 3;
+//   return randomMove;
+// }
+
+// console.log(generateRandomMove());
+// console.log(generateRandomMove());
+// console.log(generateRandomMove());
+// console.log(generateRandomMove());
+
+
+function greeting(name='uncle ji') {
+  console.log(`namaste ${name}`);
 }
 
-let add = sum(2, 4);
-console.log(add);
+greeting('sharma ji');
 
-
-
-function generateRandomMove() {
-  let random = Math.random();
-  let randomMove = random * 3;
-  return randomMove;
-}
-
-console.log(generateRandomMove());
-console.log(generateRandomMove());
-console.log(generateRandomMove());
-console.log(generateRandomMove());
+greeting();

@@ -13,18 +13,10 @@
       <button
         class="bat"
         onclick="
-        generateComputerChoice();
-
-    let resultMsg;
-    if(computerChoice === 'Ball'){
-      resultMsg='You are the winner';
-    }else if(computerChoice === 'Stump'){
-      resultMsg='Computer is the winner';
-    }else{
-      resultMsg=`It's a Draw`;
-    }
-
-    alert(`your choice is bat  and  computer choice is ${computerChoice } and  ${resultMsg}`);
+        let computerChoice = generateComputerChoice();
+        let userChoice = 'bat';
+    let resultMsg=getResult(userChoice,computerChoice);
+    showResult(userChoice, computerChoice ,resultMsg);
     "
       >
         Bat
@@ -33,17 +25,10 @@
       <button
         class="ball"
         onclick="    
-     generateComputerChoice();
-
-    if(computerChoice === 'Ball'){
-      resultMsg=`It's a Draw`;
-    }else if(computerChoice === 'Stump'){
-      resultMsg='You are the winner';
-    }else{
-      resultMsg=`Computer is the winner`;
-    }
-
-    alert(`You have choosen Ball  and  computer choice is ${computerChoice } and  ${resultMsg}`);
+    computerChoice= generateComputerChoice();
+    userChoice = 'ball';
+    resultMsg=getResult(userChoice,computerChoice);
+    showResult(userChoice, computerChoice ,resultMsg);
     "
       >
         Ball
@@ -52,18 +37,10 @@
       <button
         class="stump"
         onclick="
-    
-     generateComputerChoice();
-
-    if(computerChoice === 'Ball'){
-      resultMsg=`Computer is the winner`;
-    }else if(computerChoice === 'Stump'){
-      resultMsg=`It's a Draw`;
-    }else{
-      resultMsg=`You are the winner `;
-    }
-
-    alert(`You have choosen Stump and computer choice is ${computerChoice } and  ${resultMsg}`);
+     computerChoice = generateComputerChoice();
+    userChoice = 'stump';
+    resultMsg=getResult(userChoice,computerChoice);
+    showResult(userChoice, computerChoice ,resultMsg);
     "
       >
         Stump
