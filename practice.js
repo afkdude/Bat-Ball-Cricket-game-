@@ -61,10 +61,84 @@ console.log("This is my personnel practice Space");
 // console.log(generateRandomMove());
 
 
-function greeting(name='uncle ji') {
-  console.log(`namaste ${name}`);
-}
+// function greeting(name='uncle ji') {
+//   console.log(`namaste ${name}`);
+// }
 
-greeting('sharma ji');
+// greeting('sharma ji');
 
-greeting();
+// greeting();
+
+//  odd or even
+
+// function checkNumber(number) {
+//   if (number % 2 == 0) {
+//     return `No is even`;
+//   } else {
+//     return `No is odd`;
+//   }
+// }
+
+// console.log(checkNumber(2));
+// console.log(checkNumber(3));
+// console.log(checkNumber(4));
+// console.log(checkNumber(5));
+// console.log(checkNumber(25));
+
+
+// return larger
+
+
+// function tellBig(no1, no2) {
+  
+//   if (no1 > no2) {
+//     return `${no1} is greater then ${no2}`;
+//   } else if (no1 === no2) {
+//     return `Both are same`;
+//   } else {
+//     return `${no2} is greater then ${no1}`;
+
+//   }
+  
+// }
+
+// console.log(tellBig(2, 4));
+// console.log(tellBig(56, 4));
+// console.log(tellBig(2, 400));
+// console.log(tellBig(200, 200));
+
+
+
+// celsius to fahreinhieght
+
+
+// function converter(celsius) {
+//   return ((((9 / 5) * celsius) + 32));
+// }
+
+// console.log(converter(0));
+// console.log(converter(10));
+// console.log(converter(43));
+// console.log(converter(56));
+
+
+// topic - object
+
+
+// let user={
+//   name: 'shubham amrawat',
+//   age: 20, 
+// };
+
+// console.log(user.name, user.age)
+
+// console.log(user['name'], user['age']);
+// console.log(typeof (user)); 
+
+
+// console.log(user)
+
+// delete user.age;
+
+// console.log(user)
+
