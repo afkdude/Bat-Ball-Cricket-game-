@@ -127,13 +127,13 @@ console.log("This is my personnel practice Space");
 
 // let user={
 //   name: 'shubham amrawat',
-//   age: 20, 
+//   age: 20,
 // };
 
 // console.log(user.name, user.age)
 
 // console.log(user['name'], user['age']);
-// console.log(typeof (user)); 
+// console.log(typeof (user));
 
 
 // console.log(user)
@@ -142,3 +142,68 @@ console.log("This is my personnel practice Space");
 
 // console.log(user)
 
+// complex object
+
+// let product = {
+//   company: 'Mango',
+//   itemName: 'Tshirt',
+//   price: 871,
+//   rating: {
+//     stars: 4.5,
+//     noOfReviews: 87,
+//   },
+//   displayPractice: function () {
+//     console.log('shubham ');
+//   }
+  
+// };
+
+// console.log(product['company']);
+// console.log(product['itemName']);
+// console.log(product['price']);
+
+// console.log(product['rating']);
+// console.log(product['rating'].stars);
+// console.log(product['rating'].noOfReviews);
+
+// console.log(product['displayPractice']);
+// product.displayPractice();
+
+//  topic - autO Boxing
+
+
+// practice exerscise
+
+//  product from myntra
+
+let product = {
+  brand: "Urban Monkey",
+  name: 'Cotton Tshirt',
+  fit: 'relaxed fit',
+  price: 700,
+  dilveryTime:'same day dilvery',  
+};
+
+// question 2 creating two references 
+let product2 = product;
+console.log(product.brand);
+
+product2.brand = 'Roadster';
+
+console.log(product.brand);
+
+
+// question 3
+
+console.log(product['dilveryTime']);
+
+//QUESTION 4
+
+let objNew = {
+  message: 'good job',
+  status: 'complete',
+};
+
+let { message, status } = objNew;
+
+console.log(`${message} ${status}`);

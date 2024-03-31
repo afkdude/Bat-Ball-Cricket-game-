@@ -7,6 +7,11 @@ let score = {
   win: 0,
   lost: 0,
   tie: 0,
+  displayScore: function () {
+    return `No of matches Won - ${ score.win }
+    Lost - ${ score.lost }
+    Tie - ${ score.tie }`
+  }
 };
 
 
@@ -69,9 +74,7 @@ function getResult(userMove, computerMove) {  //computerMove same as computerCho
 
 function showResult(userMove, computerMove, result) {
   alert(`your choice is ${userMove}  and  computer choice is ${computerMove} and  
-  ${result}  
-  Won - ${score.win} 
-  Lost - ${score.lost}
-  Tie  - ${score.tie}`);
+  ${result}
+  ${score.displayScore()}`);
 
 }
