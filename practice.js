@@ -279,3 +279,20 @@ console.log("This is my personnel practice Space");
 
 // localStorage.setItem('Score', JSON.stringify(score2));
 // console.log(localStorage.getItem('Score'));
+
+
+//  Topic - Date
+
+// let myDate = new Date();
+// console.log(myDate);
+
+// console.log(myDate.getTime());
+// console.log(myDate.getFullYear());
+// console.log(myDate.getDay());
+// console.log(myDate.getDate());
+// console.log(myDate.getMinutes());
+// console.log(myDate.getHours());
+// console.log(myDate.getMonth());
+
+
+
