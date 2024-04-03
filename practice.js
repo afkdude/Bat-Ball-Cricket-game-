@@ -90,7 +90,7 @@ console.log("This is my personnel practice Space");
 
 
 // function tellBig(no1, no2) {
-  
+
 //   if (no1 > no2) {
 //     return `${no1} is greater then ${no2}`;
 //   } else if (no1 === no2) {
@@ -99,7 +99,7 @@ console.log("This is my personnel practice Space");
 //     return `${no2} is greater then ${no1}`;
 
 //   }
-  
+
 // }
 
 // console.log(tellBig(2, 4));
@@ -155,7 +155,7 @@ console.log("This is my personnel practice Space");
 //   displayPractice: function () {
 //     console.log('shubham ');
 //   }
-  
+
 // };
 
 // console.log(product['company']);
@@ -176,34 +176,61 @@ console.log("This is my personnel practice Space");
 
 //  product from myntra
 
-let product = {
-  brand: "Urban Monkey",
-  name: 'Cotton Tshirt',
-  fit: 'relaxed fit',
-  price: 700,
-  dilveryTime:'same day dilvery',  
-};
+// let product = {
+//   brand: "Urban Monkey",
+//   name: 'Cotton Tshirt',
+//   fit: 'relaxed fit',
+//   price: 700,
+//   dilveryTime: 'same day dilvery',
+// };
 
-// question 2 creating two references 
-let product2 = product;
-console.log(product.brand);
+// question 2 creating two references
+// let product2 = product;
+// console.log(product.brand);
 
-product2.brand = 'Roadster';
+// product2.brand = 'Roadster';
 
-console.log(product.brand);
+// console.log(product.brand);
 
 
 // question 3
 
-console.log(product['dilveryTime']);
+// console.log(product['dilveryTime']);
 
 //QUESTION 4
 
-let objNew = {
-  message: 'good job',
-  status: 'complete',
+// let objNew = {
+//   message: 'good job',
+//   status: 'complete',
+// };
+
+// let { message, status } = objNew;
+
+// console.log(`${message} ${status}`);
+
+
+// json
+
+let product = {
+  company: 'Mango',
+  itemName: 'Tshirt',
+  price: 871,
+  rating: {
+    stars: 4.5,
+    noOfReviews: 87,
+  },
+  displayPractice: function () {
+    console.log('shubham ');
+  }
+
 };
 
-let { message, status } = objNew;
+let str = JSON.stringify(product);
+console.log(typeof product);
+console.log(product);
 
-console.log(`${message} ${status}`);
+console.log(typeof str);
+
+console.log(str);
+ 
+
