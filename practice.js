@@ -211,26 +211,71 @@ console.log("This is my personnel practice Space");
 
 // json
 
-let product = {
-  company: 'Mango',
-  itemName: 'Tshirt',
-  price: 871,
-  rating: {
-    stars: 4.5,
-    noOfReviews: 87,
-  },
-  displayPractice: function () {
-    console.log('shubham ');
-  }
+// let product = {
+//   company: 'Mango',
+//   itemName: 'Tshirt',
+//   price: 871,
+//   rating: {
+//     stars: 4.5,
+//     noOfReviews: 87,
+//   },
+//   displayPractice: function () {
+//     console.log('shubham ');
+//   }
 
-};
+// };
 
-let str = JSON.stringify(product);
-console.log(typeof product);
-console.log(product);
+// let str = JSON.stringify(product);
+// console.log(typeof product);
+// console.log(product);
 
-console.log(typeof str);
+// console.log(typeof str);
 
-console.log(str);
- 
+// console.log(str);
 
+
+// let newProduct = JSON.parse(str);
+
+// console.log(typeof newProduct);
+// console.log(newProduct);
+
+
+// Local Storage
+
+
+// let product = {
+//   company: 'Mango',
+//   itemName: 'Tshirt',
+//   price: 871,
+//   rating: {
+//     stars: 4.5,
+//     noOfReviews: 87,
+//   },
+//   displayPractice: function () {
+//     console.log('shubham ');
+//   }
+// }
+
+// localStorage.setItem('name', 'shubham');
+// localStorage.setItem('Price', '2345');
+
+// console.log(localStorage.getItem('name'));
+
+// localStorage.setItem('Product', JSON.stringify(product));
+// console.log(localStorage.getItem('Product'))
+
+// let product2 = JSON.parse(localStorage.getItem('Product'));
+
+// console.log(product2);
+
+// localStorage.removeItem('Price')
+
+
+// let score2 = {
+//   win: 0,
+//   lost: 0,
+//   tie: 0,
+// };
+
+// localStorage.setItem('Score', JSON.stringify(score2));
+// console.log(localStorage.getItem('Score'));

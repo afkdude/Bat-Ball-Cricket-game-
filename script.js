@@ -3,16 +3,43 @@
 
 //creating a object to keep track of the scores
 
-let score = {
-  win: 0,
-  lost: 0,
-  tie: 0,
-  displayScore: function () {
-    return `No of matches Won - ${ score.win }
-    Lost - ${ score.lost }
-    Tie - ${ score.tie }`
-  }
-};
+let scoreStr = localStorage.getItem('Score');  //this will fetch the data item labbeled as Score in this case the stored score object in local storage 
+// let score;
+
+//checking if a data is present in scoreStr 
+// if (scoreStr !== undefined) {
+
+  //if data exists then since it is a stribg ub  JSON format we will convert it to  java script object 
+  // score = JSON.parse(scoreStr);
+// } else {
+
+  // if the data is not fetched from the local storage then default score will be initialized . 
+//   score = {
+//     win: 0,
+//     lost: 0,
+//     tie: 0,
+
+//   };
+// }
+
+// better way to write above code
+let score
+resetScore(scoreStr);
+function resetScore(scoreStr) {
+   score = scoreStr ? JSON.parse(scoreStr) :{
+
+    win: 0,
+    lost: 0,
+    tie: 0,
+
+  };
+
+  score.displayScore = function () {
+    return `No of matches Won - ${score.win}
+    Lost - ${score.lost}
+    Tie - ${score.tie}`;
+  };
+}
 
 
 function generateComputerChoice() {
@@ -73,6 +100,12 @@ function getResult(userMove, computerMove) {  //computerMove same as computerCho
 
 
 function showResult(userMove, computerMove, result) {
+
+  //storing score in local storage
+
+  localStorage.setItem('Score', JSON.stringify(score)); 
+
+
   alert(`your choice is ${userMove}  and  computer choice is ${computerMove} and  
   ${result}
   ${score.displayScore()}`);
